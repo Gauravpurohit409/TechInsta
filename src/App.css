@@ -1,7 +1,9 @@
-ul{
+#menubar ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  height: 50px;
+  background-color: #FFFFFF;
 }
 li{
   float: left;
@@ -9,19 +11,19 @@ li{
 
 li a{
   display: block;
-  color: black;
+  color: #797979;
   text-align: center;
   padding: 16px;
   text-decoration: none;
 }
 
-li button{
+.buttons{
   display: block;
   padding: 6 px;
   margin-top: 16px;
   margin-right: 4px;
   position: relative;
-  left:900px;
+  left:450px;
 }
 
 .search{
@@ -34,6 +36,14 @@ svg{
   margin-top: 3px;
 }
 
+.search input{
+  height: 25px;
+  border: 2px solid #E8E8E8;
+}
 #justToClearFloat{
   clear:both;
+}
+
+#menubar{
+  background-color: white;
 }

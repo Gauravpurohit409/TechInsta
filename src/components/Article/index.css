@@ -1,0 +1,32 @@
+ul{
+    list-style-type: none;
+}
+li{
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+img{
+    float:left;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+p{
+  color:#848484;
+  font-size: 12px;
+}
+
+
+#title{
+    font-size: 18px;
+    font-weight: bold;   
+}
+#justToClearFloat{
+    clear:both;
+  }
+
+#container{
+    height: 120px;
+    width: 1000px;
+}
