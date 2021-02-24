@@ -59,7 +59,6 @@ const Home = () => {
 
             <div id="upcomingEvents">
                 <UpcomingProducts />
-               
             </div>
         </div> 
         
