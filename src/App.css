@@ -1,49 +1,94 @@
-#menubar ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: 50px;
-  background-color: #FFFFFF;
-}
-li{
-  float: left;
+ul{
+  padding: 0% !important;
+  list-style: none;
+  width: 100%;
 }
 
-li a{
-  display: block;
+#menubar li{
+  background-color: #FFFFFF;
+  margin: 10px;
+}
+
+#navigationBar{
+  background-color: #FFFFFF;
+  padding: 0% 10%;
+  position:sticky;
+  top:0;
+}
+#menubar{
+  display: flex;
+  justify-content: space-between;
+  margin:0%;
+  padding:0% 10%;
+}
+
+#links{
+  display: flex;
+  align-items: center;
+  font-size: 16px ;
+  width: 60%;
+}
+
+#buttongroup{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  color:#DA552F ;
+  font-size: 2.5em !important;
+}
+
+.search,.search div{
+  height: 100%;
+  width: 100%;
+}
+.search div{
+  display: flex;
+  align-items: center;
+}
+.search div input{
+  height: 52%;
+  width: 100%   ;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  font-size: 12px;
+
+}
+
+#buttongroup li{
+  display: flex;
+  font-size: 12px;
+  height: 54%;
+}
+
+.login{
+  background-color: #FFFFFF;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius:5px ; 
+  border: 1px solid #E8E8E8;
+  width: 71px;
+}
+.signup{
+  background-color: #CC4D29;
+  color:white;  
+  font-size: 10px;
+  font-weight: bold;
+  border-radius:5px ;
+  border: 1px solid #E8E8E8;
+  width: 71px;
+}
+
+a:link, a:visited {
+  background-color: #FFFFFF;
   color: #797979;
   text-align: center;
-  padding: 16px;
   text-decoration: none;
 }
 
-.buttons{
-  display: block;
-  padding: 6 px;
-  margin-top: 16px;
-  margin-right: 4px;
-  position: relative;
-  left:450px;
+a:hover, a:active {
+  color: black;
 }
 
-.search{
-  position: relative;
-  top:15px;
-}
 
-svg{
-  padding-right: 4px;
-  margin-top: 3px;
-}
-
-.search input{
-  height: 25px;
-  border: 2px solid #E8E8E8;
-}
-#justToClearFloat{
-  clear:both;
-}
-
-#menubar{
-  background-color: white;
-}

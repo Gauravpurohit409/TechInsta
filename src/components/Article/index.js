@@ -1,18 +1,25 @@
 import React from 'react';
-import faker from 'faker';
 import "./index.css"
 
 const Article = (props) => {
     console.log("hhello",props.article.url());
     return (
         <>
-        <div id="container">
-            <img src = {props.article.url()} alt="not available" />
-            {/* <span class="justToClearFloat"></span> */}
-            <span id="title">{props.article.Title()}</span>
-            <p>{props.article.Description()}</p>
+        <div className="container">
+            <div id ="left">
+                <img src = {props.article.url()} alt="not available" />
+                <span className="justToClearFloat"></span>
+                <div id= "text">
+                    <span id="title">{props.article.Title()}</span>
+                    <p id = "body">{props.article.Description()}</p>
+                </div>
+            </div>
+            <div id= "right">
+            <i className="fa fa-caret-up" ></i>
+            <span style = {{fontWeight : 'bold',fontSize : 'small'}}>1,000</span>
+            </div>
         </div>
-        <div class= "justToClearFloat">
+        <div className= "justToClearFloat">
         </div>
    
         </>

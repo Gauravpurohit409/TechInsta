@@ -1,0 +1,22 @@
+#home{
+    height: 100%;
+    display: flex;
+    margin-left:  11%;
+    margin-right: 9%;
+}
+#home ul{
+    /* margin: 0%; */
+    height: 100%;
+    width:  68%;
+}
+
+#home ul li{
+    /* background-color: yellow; */
+    /* height: 100%; */
+    width: 100%;
+}
+
+#upcomingEvents{
+    margin: 2%;
+    width: 32%;
+}

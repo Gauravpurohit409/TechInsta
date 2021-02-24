@@ -8,18 +8,15 @@ import Jobs from './components/Jobs';
 function App() {
   return (
   <Router>
-    <div>
-      <nav id = "menubar">
-        <ul>
+    <div id= "navigationBar">
+      <nav >
+        <ul id = "menubar">
+          <div id= "links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/"><i className="fa fa-product-hunt fa-2x logo"></i></Link>
           </li>
           <li className="search">
             <div >
-              <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.383 10.347a5.796 5.796 0 11.965-.964L15 14.036l-.964.964-4.653-4.653zm-3.588-.12a4.432 4.432 0 100-8.863 4.432 4.432 0 000 8.863z" >
-                  </path>
-              </svg>
               <input type="text" placeholder="Discover your next favourite thing..." size="25"/>
             </div>
           </li>
@@ -32,20 +29,21 @@ function App() {
           <li>
             <Link to="/jobs">Jobs</Link>
           </li>
-
-          <li className="buttons">
-            <button>LOG IN</button>
-          </li>
-          <li className = "buttons">
-            <button>SIGN UP</button>
-          </li>
+          </div>
+          <div id="buttongroup">
+              <li >
+                <button className="login">LOG IN</button>
+              </li>
+              <li >
+                <button className="signup">SIGN UP</button>
+              </li>
+          </div>
         </ul>
       </nav>
       
     </div>
    <div id= "justToClearFloat">
      </div>
-    <br/>
     <Switch>
           <Route path="/" exact>
             <Home />
